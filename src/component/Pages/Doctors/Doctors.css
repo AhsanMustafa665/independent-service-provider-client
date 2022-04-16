@@ -1,0 +1,34 @@
+.doctors-title {
+    color: darkkhaki;
+}
+
+.doctors-container img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.doctors-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+
+}
+
+/* Mobile view */
+
+@media screen and (max-width:576px) {
+    .doctors-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/* Tablet view */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .doctors-container {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+}

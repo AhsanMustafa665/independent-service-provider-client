@@ -1,0 +1,65 @@
+[
+    {
+        "_id": "623853b2614ad5aba311fdd1",
+        "picture": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg",
+        "name": "Dr Angel",
+        "price": 214,
+        "description": "Doctors Services Group is your complete solution for effectively managing all your practice’s uninsured services activities"
+    },
+    {
+        "_id": "623853b2578e9e6ad1ae0dd5",
+        "picture": "https://img.freepik.com/free-photo/medium-shot-doctor-with-crossed-arms_23-2148868176.jpg",
+        "name": "Dr Handwerker",
+        "price": 127,
+        "description": "We help educate your patients on uninsured medical services and when they can expect to be charged"
+    },
+    {
+        "_id": "623853b21fb149d2ee7b76c7",
+        "picture": "https://img.freepik.com/free-photo/portrait-smiling-male-doctor_171337-1532.jpg",
+        "name": "Dr Fear",
+        "price": 124,
+        "description": "We take care of communicating with your patients and managing the billing for uninsured medical services."
+    },
+    {
+        "_id": "623853b2e91c8de578c9245e",
+        "picture": "https://img.freepik.com/free-photo/portrait-smiling-young-man-doctor-with-stethoscope-standing-with-arms-folded_171337-15538.jpg",
+        "name": "Dr Fingerhut",
+        "price": 214,
+        "description": "Our platform is customizable to meet the specific needs of your practice all your practice’s uninsured services activities"
+    },
+    {
+        "_id": "623853b2239582e48409ccc6",
+        "picture": "https://img.freepik.com/free-photo/doctor-standing-with-folder-stethoscope_1291-16.jpg",
+        "name": "Dr Pillow",
+        "price": 134,
+        "description": "From patient education to communications and administration, we take time consuming tasks off your plate so you can focus on patient care."
+    },
+    {
+        "_id": "623853b2cdda0d5bc294f791",
+        "picture": "https://img.freepik.com/free-photo/hospital-healthcare-workers-covid-19-treatment-concept-young-doctor-scrubs-making-daily-errands-clinic-listening-patient-symptoms-look-camera-professional-physician-curing-diseases_1258-57233.jpg",
+        "name": "Dr B. Savage",
+        "price": 141,
+        "description": "If your medical practice has shied away from annual fees for uninsured services, you might want to reconsider. "
+    },
+    {
+        "_id": "623853b2cdda0d5bc294f791",
+        "picture": "https://img.freepik.com/free-photo/asian-doctor-using-medical-app-his-digital-device_1098-18881.jpg?",
+        "name": "Dr B. Alex",
+        "price": 120,
+        "description": "We offer physicians a full-service outsourced solution enabling them to alleviate their administrative burden and get uninsured services billing under control  "
+    },
+    {
+        "_id": "623853b2cdda0d5bc294f791",
+        "picture": "https://img.freepik.com/free-photo/professional-doctor-office_1098-21197.jpg",
+        "name": "Dr Johnson",
+        "price": 221,
+        "description": "Doctors Services Group was established in 2005 and is the industry leader in providing uninsured services billing programs. We believe physicians should be fairly compensated for all services provided. "
+    },
+    {
+        "_id": "623853b2736f19fd4eb8d44a",
+        "price": 241,
+        "picture": "https://img.freepik.com/free-photo/healthcare-workers-medical-insurance-pandemic-covid-19-concept-handsome-smiling-doctor-white-coat-glasses-holding-medicine-hand-advice-use-medication-antibiotics_1258-58615.jpg",
+        "name": "Dr Dickman",
+        "description": "Is your medical practice billing for all the uninsured administrative services that you can? Many practices miss out on these key revenue opportunities."
+    }
+]
