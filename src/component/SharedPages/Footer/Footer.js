@@ -1,12 +1,12 @@
-import React from 'react';
-import './Footer.css';
+// import React from 'react';
+// import './Footer.css';
 
-const Footer = () => {
-    return (
-        <footer className='bg-dark text-center text-white py-2 pt-4 mt-4 '>
-            <p><small>Copyright © {new Date().getFullYear()} </small></p>
-        </footer>
-    );
-};
+// const Footer = () => {
+//     return (
+//         <footer className='bg-dark text-center text-white py-2 pt-4 mt-4 '>
+//             <p><small>Copyright © {new Date().getFullYear()} </small></p>
+//         </footer>
+//     );
+// };
 
-export default Footer;
+// export default Footer;

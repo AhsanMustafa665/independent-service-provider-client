@@ -1,0 +1,35 @@
+.doctor-container {
+    display: flex;
+
+}
+
+
+.doctor-container img {
+    width: 50%;
+    margin-top: 5%;
+}
+
+.doctor-container h1 {
+    font-family: cursive;
+    font-weight: bolder;
+    margin-top: 15%;
+    color: cornflowerblue;
+}
+
+.card-img {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+div .img-card {
+    border-radius: 20px;
+
+
+}
+
+div .img-doctor2 {
+    border-radius: 20px;
+
+
+}
