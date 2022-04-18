@@ -13,7 +13,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
-  let errorElement;
+  
  
     const [
       signInWithEmailAndPassword,
@@ -28,21 +28,21 @@ const Login = () => {
   if (user) {
     navigate(from, { replace: true });
   }
-
+  let errorElement;
   if (error) {
     errorElement= <p className='text-danger'>Error: {error?.message}</p>
   }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const email = emailRef.current.value;
-        const password = passwordRef.current.value;
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
       
-      signInWithEmailAndPassword(email, password);
-    }
+    signInWithEmailAndPassword(email, password);
+  };
 
     const navigateSignup = (event) => {
-        navigate('/home');
+        navigate('/register');
   }
   
   const resetPassword = async () => {
@@ -67,21 +67,21 @@ const Login = () => {
     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
   </Form.Group>
  
-  <Button variant="primary w-50 mx-auto d-block mb-2" type="submit" onClick={navigateSignup}>
+  <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
     Login
   </Button>
-        </Form>
-        {errorElement}
+        
+          {errorElement}
+          </Form>
             <p>Want see a doctor?<Link
             to={"/signup"}
             className="text-primary text-decoration-none" onClick={navigateSignup}>
           Please register.</Link></p>
         
-            <p>Forget password?<Link
-            to={"/signup"}
-            className="text-primary text-decoration-none" onClick={resetPassword}>
+            <p>Forget password?<button onClick={resetPassword}
+            className="text-primary btn btn-link text-decoration-none" >
             Reset password.
-            </Link>
+            </button>
         </p>
         <SocialLogin></SocialLogin>
         </div>
