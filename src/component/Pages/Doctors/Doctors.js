@@ -13,7 +13,7 @@ const Doctors = () => {
     },[])
     return (
         <div id='services' className='container'>
-            <h1 className='doctors-title'>Our Doctors</h1>
+            <h1 className='doctors-title'>My Services</h1>
             <div className='doctors-container'>
             {
                 doctors.map(doctor => 

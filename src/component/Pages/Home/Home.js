@@ -14,6 +14,7 @@ const Home = () => {
             <div className='doctor-container container'>
                 <div className='doctor-bio'>
                     <h1>Family practice physician & Internal medicine physician</h1>
+                    <h3>HI THERE I'M <span>DR. ADOLINA </span></h3>
                     <br />
                 <h6>Professional Summary</h6>
                     <p><small>Adept medical doctor with eight solid years of practice experience. Dedicated to exemplary patient outcomes and following all necessary medical procedures with the use of the latest industry equipment and technology.  </small></p>

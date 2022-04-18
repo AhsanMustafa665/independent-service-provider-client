@@ -5,6 +5,7 @@ import './Signup.css';
 import auth from '../../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin/SocialLogin';
 import { async } from '@firebase/util';
+import Loading from '../../../SharedPages/Loading/Loading';
 
 const Signup = () => {
     const [agree,setAgree]=useState(false)
@@ -23,6 +24,10 @@ const Signup = () => {
         navigate('/login');
     }
   
+    if (loading || updating) {
+        return <Loading></Loading>
+      }
+    
 
     if (user) {
         console.log('user',user);
