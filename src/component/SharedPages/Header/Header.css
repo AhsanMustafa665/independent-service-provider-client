@@ -1,0 +1,12 @@
+.link {
+
+    color: white;
+    font-weight: bold;
+}
+
+.link:hover {
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    text-decoration: underline;
+    text-underline-offset: 70%;
+}

@@ -16,8 +16,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
-  
- 
+
     const [
       signInWithEmailAndPassword,
       user,
@@ -62,10 +61,11 @@ const Login = () => {
     else {
       toast('Please enter your email address!')
     }
+    
   }
     return (
         <div>
-            <h3 className=' text-center'>Please login</h3>
+            <h3 style={{color: 'cornflowerblue'}} className='text-center'>Please login</h3>
             <Form onClick={handleSubmit} className='container w-50 mx-auto'>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     
@@ -80,22 +80,24 @@ const Login = () => {
     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
   </Form.Group>
  
-  <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
+  <Button  style={{backgroundColor: 'darkslategray'}}  variant="primary w-50 mx-auto d-block mb-2" type="submit">
     Login
   </Button>
         
           {errorElement}
           </Form>
-            <p>Want see a doctor?<Link
+        <div className='text-center'>
+        <p>Want see a doctor? <Link
             to={"/signup"}
             className="text-primary text-decoration-none" onClick={navigateSignup}>
-          Please register.</Link></p>
+           Please register.</Link></p>
         
             <p>Forget password?<button onClick={resetPassword}
             className="text-primary btn btn-link text-decoration-none" >
             Reset password.
             </button>
         </p>
+            </div>
         <SocialLogin></SocialLogin>
         <ToastContainer/>
         </div>

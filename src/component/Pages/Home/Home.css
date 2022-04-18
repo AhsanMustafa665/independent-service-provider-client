@@ -3,11 +3,24 @@
 
 }
 
-
 .doctor-container img {
     width: 50%;
     margin-top: 5%;
+
 }
+
+.doctor-container .doctor {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.doctor-container .doctor:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
 
 .doctor-container h1 {
     font-family: cursive;
@@ -22,14 +35,78 @@
     gap: 20px;
 }
 
+.card-img .img-card:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.card-img .img-card2:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+
+    @-webkit-keyframes flash {
+        0% {
+            opacity: .4;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes flash {
+        0% {
+            opacity: .4;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.card-img .img-card2 {
+    border-radius: 20px;
+}
+
 div .img-card {
     border-radius: 20px;
-
-
 }
 
 div .img-doctor2 {
     border-radius: 20px;
 
 
+}
+
+.name {
+    font-weight: bolder;
+
+}
+
+.name span {
+    color: indianred;
+    font-family: 'Abril Fatface', cursive;
 }

@@ -13,8 +13,8 @@ const Home = () => {
             <Banner></Banner>
             <div className='doctor-container container'>
                 <div className='doctor-bio'>
-                    <h1>Family practice physician & Internal medicine physician</h1>
-                    <h3>HI THERE I'M <span>DR. ADOLINA </span></h3>
+                    <h1>Family practice physician & Internal medicine physician</h1> <br />
+                    <h3 className='name'>HI THERE I'M <span>DR. ADOLINA </span></h3>
                     <br />
                 <h6>Professional Summary</h6>
                     <p><small>Adept medical doctor with eight solid years of practice experience. Dedicated to exemplary patient outcomes and following all necessary medical procedures with the use of the latest industry equipment and technology.  </small></p>
@@ -28,14 +28,14 @@ const Home = () => {
                     <li>Refer patients to specialists and prescribe medication or treatment.</li>
                     <div className='card-img'>
                         <img className='img-card' src={card} alt="" />
-                        <img className='img-doctor2' src={doctor2} alt="" />
+                        <img className='img-card2' src={doctor2} alt="" />
                         
                     </div>
 
 
                 </div>
                 
-            <img className='h-50' src={doctor} alt="" />
+            <img className='h-50 doctor' src={doctor} alt="" />
             </div>
             
             <Doctors></Doctors>

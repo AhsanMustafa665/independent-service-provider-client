@@ -1,0 +1,18 @@
+.notfound-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.details h5 {
+    border: 2px solid slategray;
+    width: 75%;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 100px;
+
+    border-radius: 50px;
+    background: #d77f7f;
+    box-shadow: 20px 20px 14px #834d4d,
+        -20px -20px 14px #ffb1b1;
+    background-color: rgb(247, 90, 90);
+}

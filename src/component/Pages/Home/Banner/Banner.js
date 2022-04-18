@@ -19,8 +19,8 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Find Nearest Doctor.</h3>
-          <p>We Care for Your Health & Medical Support</p>
+          <h3 style={{color:'rgb(122, 15, 15)',fontSize:'30px'}}>Find Nearest Doctor.</h3>
+          <p style={{color:'black'}}>We Care for Your Health & Medical Support</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -31,8 +31,8 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Browse by specialist</h3>
-          <p>Bring care to your home with one click</p>
+          <h3 style={{color:'rgb(122, 15, 15)',fontSize:'30px'}}>Browse by specialist</h3>
+          <p style={{color:'black'}}>Bring care to your home with one click</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -43,8 +43,8 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Helping Doctors with the Business of Medicine.</h3>
-          <p>
+          <h3  style={{color:'rgb(122, 15, 15)',fontSize:'30px'}}>Helping Doctors with the Business of Medicine.</h3>
+          <p style={{color:'black'}}>
           Doctors Services helps physicians increase revenue.
           </p>
         </Carousel.Caption>

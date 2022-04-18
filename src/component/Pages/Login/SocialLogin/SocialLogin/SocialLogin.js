@@ -30,7 +30,7 @@ const SocialLogin = () => {
   }
 
     return (
-        <div className="text-center line">
+        <div className="text-center mx-auto">
       <div className="d-flex align-items-center w-50 mx-auto d-block">
         <div
           style={{ height: "2px" }}
@@ -44,7 +44,7 @@ const SocialLogin = () => {
         </div>
         {errorElement}
         <div>
-        <button
+        <button  style={{backgroundColor: 'darkslategray'}} 
         onClick={() => signInWithGoogle()}
         className="btn btn-success mx-auto w-50 mt-3"
       >
@@ -52,14 +52,14 @@ const SocialLogin = () => {
         <span className="px-2">Google sign in</span>
       </button>
       <br />
-          <button
+          <button  style={{backgroundColor: 'darkslategray'}} 
             onClick={()=>signInWithFacebook()}
             className="btn btn-success mx-auto w-50 mt-3">
         <img style={{ width: "30px" }} src={facebook} alt="" />
         <span className="px-2">Facebook sign in</span>
       </button>
       <br />
-      <button
+      <button  style={{backgroundColor: 'darkslategray'}} 
         onClick={() => signInWithGithub()}
         className="btn btn-success mx-auto w-50 mt-3"
       >

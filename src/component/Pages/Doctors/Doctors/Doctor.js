@@ -12,10 +12,12 @@ const Doctor = ({ doctor }) => {
     return (
         <div className='singal-doctor'>
             <img src={picture} alt="" />
-            <h5>{name}</h5>
-            <p>Fee: ${price}</p>
-            <p><small>{description}</small></p>
-            <button onClick={()=>navigateDoctorDetail(_id)}>Checkout</button>
+            <div className='detail-bg'>
+                <h5>{name}</h5>
+                <p>Fee: ${price}</p>
+                <p><small>{description}</small></p>
+                <button onClick={() => navigateDoctorDetail(_id)}>Checkout</button>
+            </div>
         </div>
     );
 };

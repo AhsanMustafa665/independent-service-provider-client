@@ -49,7 +49,7 @@ const Signup = () => {
 
     return (
         <div  className='register-form'>
-            <h3 className='text-center'>Please Signup</h3>
+            <h3 style={{color: 'cornflowerblue' }} className='text-center'>Please Signup</h3>
             <form onSubmit={handleSignup}>
                 <input type="text" name='name' placeholder='Your name' />
 
@@ -61,9 +61,7 @@ const Signup = () => {
                 
                 <label className={`ps-2 ${agree?'' : 'text-danger'}`} htmlFor="terms">Accept Doctor's Website Terms and Conditions</label>
                 
-                {/* {/* <label className={`ps-2 ${agree? '':'text-danger'}`} htmlFor="terms">Accept Genius Car Service Terms and Conditions</label> */}
-                
-                <input disabled={!agree} className='mx-auto w-50 btn btn-success mt-3' type="submit" value="Register" />
+                <input  style={{backgroundColor: 'darkslategray',color:'white'}}  disabled={!agree} className='mx-auto w-50 mt-3 py-2' type="submit" value="Signup" />
             </form>
             <p>Already have an account?<Link to={'/login'}  className='text-danger text-decoration-none' onClick={navigateLogin}>Please login.</Link></p>
             
