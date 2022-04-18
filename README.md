@@ -1,6 +1,6 @@
 # The Independent service landing page (doctor's profession)
 
-<a href="the-perfume-reviews-site.netlify.app">Live site hosted : https://app.netlify.com/sites/the-perfume-reviews-site/settings/general</a>
+<a href="https://doctors-website-131c4.web.app/">Live site hosted (firebase): https://doctors-website-131c4.web.app/</a>
 
 ## Description :
 
