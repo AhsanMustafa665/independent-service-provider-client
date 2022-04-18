@@ -1,16 +1,37 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './Signup.css';
+import auth from '../../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin/SocialLogin';
 
 const Signup = () => {
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
+    
     const navigate = useNavigate();
-    navigate('/login')
+
+    const navigateLogin = () => {
+        navigate('/login');
+    }
+  
+
+    if (user) {
+        navigate('/home');
+    }
 
     const handleSignup = (event) => {
         event.preventDefault();
+        console.log(event.target);
         const name = event.target.name.value;
-        const email = event.target.name.value;
-        const password = event.target.name.value;
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+
+        createUserWithEmailAndPassword(email, password);
     }
     return (
         <div  className='register-form'>
@@ -22,7 +43,7 @@ const Signup = () => {
 
                 <input type="password" name="password" id="" placeholder='Password' required />
 
-                <input type="checkbox" name="terms" id="terms" />
+                {/* <input type="checkbox" name="terms" id="terms" /> */}
                 
                 {/* <label className={agree?'ps-2 text-primary':'ps-2 text-danger'} htmlFor="terms">Accept Genius Car Service Terms and Conditions</label> */}
                 
@@ -30,9 +51,9 @@ const Signup = () => {
                 
                 <input className='mx-auto w-50 btn btn-success mt-3' type="submit" value="Register" />
             </form>
-            <p>Already have an account?<Link to={'/login'}  className='text-danger text-decoration-none'>Please login.</Link></p>
+            <p>Already have an account?<Link to={'/login'}  className='text-danger text-decoration-none' onClick={navigateLogin}>Please login.</Link></p>
             
-            {/* <SocialLogin></SocialLogin> */}
+            <SocialLogin></SocialLogin>
         </div>
       
     );
